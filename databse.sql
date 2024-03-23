@@ -1,0 +1,17 @@
+CREATE DATABASE FACE_RECOGNITION_ATTENDANCE_MANAGER;
+USE FACE_RECOGNITION_ATTENDANCE_MANAGER;
+
+CREATE TABLE student_details(
+Department VARCHAR(255),
+Year  VARCHAR(45),
+Semester VARCHAR(45),
+StudentID INT PRIMARY KEY,
+Gender VARCHAR(45),
+Name VARCHAR(45),
+Email Varchar(255),
+DOB VARCHAR(45),
+Phone VARCHAR(45),
+PhotoSample Varchar(45) 
+);
+select*from student_details;
+
