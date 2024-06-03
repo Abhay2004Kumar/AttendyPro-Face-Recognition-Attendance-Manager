@@ -13,7 +13,7 @@
 # Attendance Detail option will show the attendance details
 ![image](https://github.com/Abhay2004Kumar/AttendyPro-Face-Recognition-Attendance-Manager/assets/119209682/c62d2b82-c865-42d9-a0e8-86193c7a4716)
 
-# Data training will train the database as given by anyone through their labels and this makes it scalable to be used by various institutions and firms
+Data training will train the database as given by anyone through their labels and this makes it scalable to be used by various institutions and firms
 
 # Face Detect Window
 ![image](https://github.com/Abhay2004Kumar/AttendyPro-Face-Recognition-Attendance-Manager/assets/119209682/fa90a5f5-46e9-4b8e-b01e-6c43bc432fd3)
