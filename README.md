@@ -1,7 +1,7 @@
 # AttendyPro-Face-Recognition-Attendance-Manager
 "AttendyPro" is a sophisticated yet user-friendly application designed to simplify attendance tracking in educational institutions or organizational settings. By integrating facial recognition capabilities, it eliminates the need for traditional methods like paper registers or card swiping, thereby saving time and reducing administrative overhead.It uses SQL Database.
 
-# here is the Home page of this application
+# Home page of this application
 ![image](https://github.com/Abhay2004Kumar/AttendyPro-Face-Recognition-Attendance-Manager/assets/119209682/35a38de6-dde3-4112-aeec-7f5a07729213)
 
 # Student Section of this application
