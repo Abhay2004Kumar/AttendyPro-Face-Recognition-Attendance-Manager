@@ -105,7 +105,7 @@ class Attendance:
         update_btn.grid(row=0,column=1)
 
         #delete btn
-        delete_btn = Button(btn_frame,text='DELETE',width=17,font=("times new roman",13,"bold"),bg="red",fg="white",cursor="hand2")
+        delete_btn = Button(btn_frame,text='DELETE',width=17,font=("times new roman",13,"bold"),command=self.deleteCSV,bg="red",fg="white",cursor="hand2")
         delete_btn.grid(row=0,column=2)
 
         #reset btn
@@ -203,6 +203,32 @@ class Attendance:
         self.atten_date.set("")
         self.atten_time.set("")
         self.status.set("")
+    def deleteCSV(self):
+        try:
+        # Confirm with the user before deleting the data
+            confirm = messagebox.askyesno("Delete attendance data", "Are you sure you want to delete the attendance data?")
+        
+            if confirm:
+            # Clear the in-memory data
+                mydata.clear()
+
+            # Clear the data in the table view
+                self.fetchData([])  # Passing an empty list to refresh the table view
+            
+            # Overwrite the CSV file with an empty content
+                with open('attendance.csv', 'w', newline='') as file:
+                # Overwrite the file with an empty CSV structure (could add headers if needed)
+                    file.truncate()  # This ensures the file is cleared
+            
+            # Reset form elements (optional)
+                self.reset()
+
+            # Notify the user of successful deletion
+                messagebox.showinfo("Success", "Attendance data deleted successfully")
+
+        except Exception as e:
+        # If something goes wrong, show an error message
+            messagebox.showerror("Error", f"Error occurred: {e}")
 
 
     
